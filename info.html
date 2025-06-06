@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Notified - Trendd</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        header {
+            padding: 2rem 0;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 3rem 0 5rem 0;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 3rem 0 1.5rem 0;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .deadline-offer {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .deadline-offer p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0;
+            color: white;
+        }
+
+        .requirements {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .requirements p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+            text-align: left;
+        }
+
+        .requirements ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .requirements li {
+            padding: 0.5rem 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .requirements li:before {
+            content: "✓ ";
+            color: #8b5cf6;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .value-prop {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #333;
+            margin: 2.5rem 0;
+            line-height: 1.5;
+        }
+
+        .privacy-note {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+
+        .email-form {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .email-form h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #8b5cf6;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+            display: inline-block;
+            margin: 1rem 0.5rem;
+        }
+
+        .btn-primary {
+            background: #8b5cf6;
+            color: white;
+            width: 100%;
+        }
+
+        .btn-primary:hover {
+            background: #7c3aed;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #8b5cf6;
+            border: 2px solid #8b5cf6;
+        }
+
+        .btn-secondary:hover {
+            background: #8b5cf6;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            .content h1 {
+                font-size: 2rem;
+            }
+
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .value-prop {
+                font-size: 1.2rem;
+            }
+
+            .deadline-offer p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="trendd-logo-new.png" alt="Trendd" style="height: 80px;"></a>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="container">
+            <h1>Get Ready for Trendd Reports!</h1>
+            
+            <div class="deadline-offer">
+                <p><strong>Limited Time:</strong> Submit your contact information before July 10th to get exclusive launch benefits!</p>
+            </div>
+            
+            <h2>How Trendd Will Work</h2>
+            
+            <div class="requirements">
+                <p>You will simply need to upload an Excel or CSV Customer Sales report that contains:</p>
+                <ul>
+                    <li>Customer names and addresses</li>
+                    <li>Sales dates</li>
+                    <li>SKUs/item numbers</li>
+                    <li>Sale amounts</li>
+                </ul>
+            </div>
+
+            <div class="value-prop">
+                We'll transform your sales data into actionable insights on customer behavior, product performance, and market trends.
+            </div>
+
+            <div class="privacy-note">
+                Once you log off, your data will be permanently deleted. We never store your data.
+            </div>
+
+            <div class="email-form">
+                <h2>Be the first to know when we launch!</h2>
+               <form method="POST" data-netlify="true" name="email-signup" data-netlify-redirect="/success.html">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name (optional)</label>
+                        <input type="text" id="company" name="company" placeholder="Your company name">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Notify me when launching!</button>
+                </form>
+            </div>
+            
+            <a href="index.html" class="btn btn-secondary">Back to Home</a>
+        </div>
+    </section>
+</body>
+</html>

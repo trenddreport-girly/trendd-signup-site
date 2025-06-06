@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendd - Trendd</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+        header { padding: 2rem 0; }
+        .logo { font-size: 2.5rem; font-weight: 600; color: #333; }
+        .hero { padding: 3rem 0 5rem 0; }
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .hero-text h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        .hero-text p {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            color: #666;
+            line-height: 1.6;
+            max-width: 90%;
+        }
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+            display: inline-block;
+        }
+        .btn-primary {
+            background: #8b5cf6;
+            color: white;
+        }
+        .btn-primary:hover { background: #7c3aed; }
+        .hero-image {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .container { padding: 0 20px; }
+            .hero-content { grid-template-columns: 1fr; gap: 2rem; }
+            .hero-text h1 { font-size: 2.5rem; }
+            .hero-text p { font-size: 1rem; max-width: 100%; }
+            .hero { padding: 2rem 0 3rem 0; }
+        }
+        @media (max-width: 480px) {
+            .hero-text h1 { font-size: 2rem; }
+            .btn { padding: 0.8rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><img src="trendd-logo-new.png" alt="Trendd" style="height: 100px;"></div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Trendd shows you what's selling, what's slipping, who's buying &ndash; and exactly what to do next.</h1>
+                    <p>Designed for small to medium wholesale brands. Easily transform your sales data into actionable insights on customer behavior, product performance, and market trends. Experience fast, secure analytics &ndash; without ever storing your data.</p>
+                    <a href="info.html" class="btn btn-primary">Get Notified</a>
+                </div>
+                <div class="hero-image">
+                    <img src="trendd-photo-new.png" alt="Trendd wholesale business">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
