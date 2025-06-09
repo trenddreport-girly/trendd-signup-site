@@ -88,7 +88,7 @@
                 <div class="hero-text">
                     <h1>Trendd shows you what's selling, what's slipping, who's buying &ndash; and exactly what to do next.</h1>
                     <p>Designed for small to medium wholesale brands. Easily transform your sales data into actionable insights on customer behavior, product performance, and market trends. Experience fast, secure analytics &ndash; without ever storing your data.</p>
-                    <a href="info.html" class="btn btn-primary">Get Notified</a>
+                    <a href="info.html" class="btn btn-primary" id="getNotifiedBtn">Get Notified</a>
                 </div>
                 <div class="hero-image">
                     <img src="trendd-photo-new.png" alt="Trendd wholesale business">
@@ -96,5 +96,16 @@
             </div>
         </div>
     </section>
+
+    <script>
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const ref = urlParams.get('ref');
+        
+        // If there's a ref parameter, update the "Get Notified" button to include it
+        if (ref) {
+            document.getElementById('getNotifiedBtn').href = `info.html?ref=${ref}`;
+        }
+    </script>
 </body>
 </html>
