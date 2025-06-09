@@ -194,11 +194,23 @@
             <label for="company">Company Name (optional)</label>
             <input type="text" id="company" name="company" placeholder="Your company name">
           </div>
+          <input type="hidden" id="referral" name="referral" value="">
           <button type="submit" class="btn btn-primary">Notify me when launching!</button>
         </form>
       </div>
       <a href="index.html" class="btn btn-secondary">Back to Home</a>
     </div>
   </section>
+
+  <script>
+    // Get URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const ref = urlParams.get('ref');
+    
+    // If there's a ref parameter, store it in the hidden field
+    if (ref) {
+      document.getElementById('referral').value = ref;
+    }
+  </script>
 </body>
 </html>
