@@ -42,25 +42,18 @@
       flex-direction: column;
       justify-content: center;
     }
-    .requirements {
+    .simple-description {
       background: #f8f9fa;
       padding: 2rem;
       border-radius: 12px;
       margin: 2rem 0;
-      text-align: left;
+      text-align: center;
     }
-    .requirements p { font-size: 1.1rem; margin-bottom: 1.5rem; color: #333; }
-    .requirements ul { list-style: none; padding: 0; }
-    .requirements li {
-      padding: 0.5rem 0;
-      font-size: 1rem;
-      color: #555;
-    }
-    .requirements li:before {
-      content: "\2713 ";
-      color: #8b5cf6;
-      font-weight: bold;
-      margin-right: 0.5rem;
+    .simple-description p { 
+      font-size: 1.3rem; 
+      margin: 0; 
+      color: #333; 
+      font-weight: 500;
     }
     .value-prop {
       font-size: 1.4rem;
@@ -142,6 +135,7 @@
       .content h1 { font-size: 2rem; }
       .content h2 { font-size: 1.5rem; }
       .value-prop { font-size: 1.2rem; }
+      .simple-description p { font-size: 1.1rem; }
     }
   </style>
 </head>
@@ -167,15 +161,8 @@
           </p>
         </div>
       </div>
-      <h2>How Trendd Will Work</h2>
-      <div class="requirements">
-        <p>You will simply need to upload an Excel or CSV Customer Sales report that contains:</p>
-        <ul>
-          <li>Customer names and addresses</li>
-          <li>Sales dates</li>
-          <li>SKUs/item numbers</li>
-          <li>Sale amounts</li>
-        </ul>
+      <div class="simple-description">
+        <p>Trendd works with simple CSV or Excel sales reports — no integrations required.</p>
       </div>
       <div class="value-prop">We'll transform your sales data into actionable insights on customer behavior, product performance, and market trends.</div>
       <div class="privacy-note">Once you log off, your data will be permanently deleted. We never store your data.</div>
